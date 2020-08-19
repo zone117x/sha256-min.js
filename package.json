@@ -2,7 +2,7 @@
   "name": "cross-sha256",
   "main": "index.js",
   "description": "SHA-256 hash in pure javascript",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "homepage": "https://github.com/zone117x/cross-sha256",
   "repository": {
     "type": "git",

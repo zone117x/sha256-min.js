@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/zone117x/cross-sha256/compare/v1.1.1...v1.1.2) (2020-08-19)
+
+
+### Bug Fixes
+
+* exclude 'crypto' from package.json browser ([2d327f6](https://github.com/zone117x/cross-sha256/commit/2d327f6557d73fa97a3d39b06c464cb152aa633a))
+
 ## [1.1.1](https://github.com/zone117x/cross-sha256/compare/v1.1.0...v1.1.1) (2020-08-19)
 
 
