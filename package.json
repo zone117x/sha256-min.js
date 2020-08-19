@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@types/node": "^14.6.0",
-    "base-x": "^3.0.8",
     "buffer": "^5.6.0"
   },
   "devDependencies": {
@@ -33,6 +32,8 @@
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (dominictarr.com)",
   "license": "(MIT AND BSD-3-Clause)",
   "release": {
-    "branches": ["master"]
+    "branches": [
+      "master"
+    ]
   }
 }
