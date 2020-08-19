@@ -49,13 +49,13 @@ export class sha256js implements Digest {
   _h = 0x5be0cd19;
 
   constructor () {
-    this._block = SafeBuffer.alloc(this._blockSize) as unknown as Buffer
+    this._block = SafeBuffer.alloc(this._blockSize) as Buffer
   }
 
   update(data: string | Buffer | Uint8Array, encoding?: string) {
     if (typeof data === 'string') {
       encoding = encoding || 'utf8'
-      data = SafeBuffer.from(data, encoding) as unknown as Buffer;
+      data = SafeBuffer.from(data, encoding) as Buffer;
     }
     
     const block = this._block
@@ -116,7 +116,7 @@ export class sha256js implements Digest {
 
     this._update(this._block)
 
-    const hash = SafeBuffer.alloc(32) as unknown as Buffer;
+    const hash = SafeBuffer.alloc(32) as Buffer;
     hash.writeInt32BE(this._a, 0)
     hash.writeInt32BE(this._b, 4)
     hash.writeInt32BE(this._c, 8)
@@ -126,7 +126,7 @@ export class sha256js implements Digest {
     hash.writeInt32BE(this._g, 24)
     hash.writeInt32BE(this._h, 28)
 
-    return encoding ? hash.toString(encoding as any) : hash
+    return encoding ? hash.toString(encoding) : hash
   }
 
   private ch(x: number, y: number, z: number) {
@@ -241,7 +241,7 @@ export class sha256 implements Digest {
   }
   digest(): Buffer;
   digest(encoding: string): string;
-  digest(encoding?: any) {
+  digest(encoding?: string) {
     if (encoding) {
       return this.instance.digest(encoding);
     } else {
