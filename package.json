@@ -2,7 +2,7 @@
   "name": "sha256-min.js",
   "main": "index.js",
   "description": "SHA-256 hash in pure javascript",
-  "version": "2.4.11",
+  "version": "0.1.0",
   "homepage": "https://github.com/zone117x/sha256-min.js",
   "repository": {
     "type": "git",
@@ -31,5 +31,8 @@
     "index.d.ts"
   ],
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (dominictarr.com)",
-  "license": "(MIT AND BSD-3-Clause)"
+  "license": "(MIT AND BSD-3-Clause)",
+  "release": {
+    "branches": ["master"]
+  }
 }
