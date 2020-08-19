@@ -8,6 +8,9 @@
     "type": "git",
     "url": "git@github.com:zone117x/cross-sha256.git"
   },
+  "browser": {
+    "crypto": false
+  },
   "dependencies": {
     "@types/node": "^8.0.0",
     "buffer": "^5.6.0"
