@@ -21,7 +21,7 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "prepublish": "npm run test && npm run build",
+    "prepublishOnly": "npm run test && npm run build",
     "build": "tsc",
     "test": "ts-node-transpile-only test/index.ts"
   },
